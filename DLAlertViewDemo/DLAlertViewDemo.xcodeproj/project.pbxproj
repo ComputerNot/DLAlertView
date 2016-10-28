@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		520357971DC1EE9A00F1565A /* image_prompt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520357961DC1EE9A00F1565A /* image_prompt@3x.png */; };
 		52D427131DC0B50100917AA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D427121DC0B50100917AA6 /* main.m */; };
 		52D427161DC0B50100917AA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D427151DC0B50100917AA6 /* AppDelegate.m */; };
 		52D427191DC0B50100917AA6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D427181DC0B50100917AA6 /* ViewController.m */; };
@@ -17,6 +16,7 @@
 		52D4272C1DC0B50100917AA6 /* DLAlertViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D4272B1DC0B50100917AA6 /* DLAlertViewDemoTests.m */; };
 		52D427371DC0B50100917AA6 /* DLAlertViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D427361DC0B50100917AA6 /* DLAlertViewDemoUITests.m */; };
 		52D427471DC0B59300917AA6 /* DLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D427461DC0B59300917AA6 /* DLAlertView.m */; };
+		52F22C361DC33E30001355AA /* image_prompt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F22C351DC33E30001355AA /* image_prompt@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		520357961DC1EE9A00F1565A /* image_prompt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_prompt@3x.png"; sourceTree = "<group>"; };
 		52D4270E1DC0B50100917AA6 /* DLAlertViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLAlertViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D427121DC0B50100917AA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52D427141DC0B50100917AA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		52D427381DC0B50100917AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52D427451DC0B59300917AA6 /* DLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLAlertView.h; sourceTree = "<group>"; };
 		52D427461DC0B59300917AA6 /* DLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLAlertView.m; sourceTree = "<group>"; };
+		52F22C351DC33E30001355AA /* image_prompt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_prompt@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,6 @@
 				52D4271A1DC0B50100917AA6 /* Main.storyboard */,
 				52D427441DC0B53200917AA6 /* DLAlertView */,
 				52D4271D1DC0B50100917AA6 /* Assets.xcassets */,
-				520357961DC1EE9A00F1565A /* image_prompt@3x.png */,
 				52D4271F1DC0B50100917AA6 /* LaunchScreen.storyboard */,
 				52D427221DC0B50100917AA6 /* Info.plist */,
 				52D427111DC0B50100917AA6 /* Supporting Files */,
@@ -150,6 +149,7 @@
 		52D427441DC0B53200917AA6 /* DLAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				52F22C351DC33E30001355AA /* image_prompt@3x.png */,
 				52D427451DC0B59300917AA6 /* DLAlertView.h */,
 				52D427461DC0B59300917AA6 /* DLAlertView.m */,
 			);
@@ -267,7 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52D427211DC0B50100917AA6 /* LaunchScreen.storyboard in Resources */,
-				520357971DC1EE9A00F1565A /* image_prompt@3x.png in Resources */,
+				52F22C361DC33E30001355AA /* image_prompt@3x.png in Resources */,
 				52D4271E1DC0B50100917AA6 /* Assets.xcassets in Resources */,
 				52D4271C1DC0B50100917AA6 /* Main.storyboard in Resources */,
 			);

@@ -208,7 +208,7 @@
 
 + (CGFloat)viewHeightWithText:(NSString *)textString textFont:(UIFont *)font viewWidth:(CGFloat)viewWidth
 {
-    CGSize size = CGSizeMake(viewWidth-10, 0);
+    CGSize size = CGSizeMake(viewWidth-5, 0);
     NSDictionary *attribute = @{NSFontAttributeName:font};
     
     CGSize retSize = [textString boundingRectWithSize:size
@@ -218,7 +218,7 @@
                       NSStringDrawingUsesFontLeading
                                            attributes:attribute
                                               context:nil].size;
-    return retSize.height;
+    return retSize.height + 6;
 }
 
 @end
