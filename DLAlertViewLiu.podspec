@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-s.name = 'DLAlertView'
+s.name = 'DLAlertViewLiu'
 s.version = '1.0.0'
 s.license = 'MIT'
 s.summary = 'DLAlertView in iOS.'
