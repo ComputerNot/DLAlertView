@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'DLAlertViewLiu'
-s.version = '1.0.2'
+s.version = '1.0.3'
 s.license = 'MIT'
 s.summary = 'DLAlertView in iOS.'
 s.homepage = 'https://github.com/ComputerNot/DLAlertView'

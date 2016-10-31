@@ -13,6 +13,10 @@
 #define SHOW_VIEW_WIDTH    280
 #define TEXT_VIEW_DEFAULT_HEIGTH    23
 
+//#define kZLPhotoBrowserSrcName(file) [@"ZLPhotoBrowser.bundle" stringByAppendingPathComponent:file]
+//#define kZLPhotoBrowserFrameworkSrcName(file) [@"Frameworks/ZLPhotoBrowser.framework/ZLPhotoBrowser.bundle" stringByAppendingPathComponent:file]
+//kZLPhotoBrowserSrcName(file) 为通过copy文件夹方式获取图片路径的宏
+//kZLPhotoBrowserFrameworkSrcName(file) 为通过cocoapods下载安装获取图片路径的宏
 @implementation DLAlertView
 
 /*
@@ -52,7 +56,9 @@
 - (UIImageView *)topImageView
 {
     if (!_topImageView) {
-        _topImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"image_prompt"]];
+        NSBundle *currentBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]] pathForResource:@"resource" ofType:@"bundle"]];
+        UIImage *topImage = [[UIImage imageWithContentsOfFile:[currentBundle pathForResource:@"image_prompt@3x" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        _topImageView = [[UIImageView alloc] initWithImage:topImage];
         _topImageView.frame = CGRectMake(0, 0, _alertView.frame.size.width, 205);
     }
     return _topImageView;
