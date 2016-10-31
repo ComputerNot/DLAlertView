@@ -9,4 +9,5 @@ s.source = { :git => "https://github.com/ComputerNot/DLAlertView.git", :tag => s
 s.requires_arc = true
 s.ios.deployment_target = '7.0'
 s.source_files = "Classes", "DLAlertViewDemo/DLAlertViewDemo/DLAlertView/*"
+s.resource = 'DLAlertViewDemo/DLAlertViewDemo/DLAlertView/resource.bundle'
 end
