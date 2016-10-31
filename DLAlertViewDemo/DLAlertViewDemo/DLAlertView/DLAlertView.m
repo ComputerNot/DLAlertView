@@ -90,9 +90,10 @@
 {
     if (!_contentTextView) {
         _contentTextView = [[UITextView alloc] initWithFrame:CGRectMake(12, _topImageView.frame.origin.y+_topImageView.frame.size.height-110, _alertView.frame.size.width-12*2, TEXT_VIEW_DEFAULT_HEIGTH)];
-//        _contentTextView.backgroundColor = [UIColor redColor];
+        _contentTextView.textColor = [UIColor colorWithRed:102/255.0 green:102/255.0 blue:102/255.0 alpha:1];
         _contentTextView.font = [UIFont systemFontOfSize:14];
         _contentTextView.textAlignment = NSTextAlignmentJustified;
+        _contentTextView.editable = NO;
     }
     return _contentTextView;
 }
@@ -105,7 +106,7 @@
         CGFloat alertWidth = _alertView.frame.size.width;
         CGFloat buttonWidth = (alertWidth - buttonSpace * 3)/2;
         _enterButton = [UIButton buttonWithType:UIButtonTypeSystem];
-        _enterButton.frame = CGRectMake(buttonSpace*2+buttonWidth, _alertView.frame.size.height-buttonHeight-10, buttonWidth, buttonHeight);
+        _enterButton.frame = CGRectMake(buttonSpace*2+buttonWidth, _alertView.frame.size.height-buttonHeight-15, buttonWidth, buttonHeight);
         _enterButton.backgroundColor = [UIColor redColor];
         _enterButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
         _enterButton.layer.cornerRadius = buttonHeight/2;
@@ -116,8 +117,8 @@
         
         _enterButton.layer.shadowColor = _enterButton.backgroundColor.CGColor;//shadowColor阴影颜色
         _enterButton.layer.shadowOffset = CGSizeMake(2,2);//shadowOffset阴影偏移,x向右偏移4，y向下偏移4，默认(0, -3),这个跟shadowRadius配合使用
-        _enterButton.layer.shadowOpacity = 0.6;//阴影透明度，默认0
-        _enterButton.layer.shadowRadius = 4;//阴影半径，默认3
+        _enterButton.layer.shadowOpacity = .4;//阴影透明度，默认0
+        _enterButton.layer.shadowRadius = 2;//阴影半径，默认3
     }
     return _enterButton;
 }
@@ -130,7 +131,7 @@
         CGFloat alertWidth = _alertView.frame.size.width;
         CGFloat buttonWidth = (alertWidth - buttonSpace * 3)/2;
         _cancelButton = [UIButton buttonWithType:UIButtonTypeSystem];
-        _cancelButton.frame = CGRectMake(buttonSpace, _alertView.frame.size.height-buttonHeight-10, buttonWidth, buttonHeight);
+        _cancelButton.frame = CGRectMake(buttonSpace, _alertView.frame.size.height-buttonHeight-15, buttonWidth, buttonHeight);
         _cancelButton.layer.borderWidth = .7;
         _cancelButton.layer.borderColor = [UIColor colorWithRed:238/255.0 green:238/255.0 blue:238/255.0 alpha:1].CGColor;
         _cancelButton.layer.cornerRadius = buttonHeight/2;
@@ -179,8 +180,8 @@
     CGFloat buttonHeight = 40;
     CGFloat alertWidth = _alertView.frame.size.width;
     CGFloat buttonWidth = (alertWidth - buttonSpace * 3)/2;
-    _enterButton.frame = CGRectMake(buttonSpace*2+buttonWidth, _alertView.frame.size.height-buttonHeight-10, buttonWidth, buttonHeight);
-    _cancelButton.frame = CGRectMake(buttonSpace, _alertView.frame.size.height-buttonHeight-10, buttonWidth, buttonHeight);
+    _enterButton.frame = CGRectMake(buttonSpace*2+buttonWidth, _alertView.frame.size.height-buttonHeight-15, buttonWidth, buttonHeight);
+    _cancelButton.frame = CGRectMake(buttonSpace, _alertView.frame.size.height-buttonHeight-15, buttonWidth, buttonHeight);
 }
 
 #pragma mark - + Method
