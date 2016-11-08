@@ -13,4 +13,4 @@
 
 #### Cocoapod Method:-
 
-[![CocoaPods](https://img.shields.io/cocoapods/v/DLAlertView.svg)](http://cocoadocs.org/docsets/DLAlertView)
+[![CocoaPods](https://img.shields.io/cocoapods/v/DLAlertViewLiu.svg)](http://cocoadocs.org/docsets/DLAlertViewLiu)
