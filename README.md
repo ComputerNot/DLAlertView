@@ -1,5 +1,4 @@
-# DLAlertView
-
+<H1 align="center">DLAlertView</H1>
 <p align="center">
   <img src="https://img.shields.io/github/license/computernot/DLAlertView.svg" alt="GitHub license"/>
 
